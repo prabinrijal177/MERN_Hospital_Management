@@ -1,5 +1,5 @@
 import axios from "axios";
-import  { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
@@ -25,7 +25,7 @@ const AppointmentForm = () => {
     "Neurology",
     "Oncology",
     "Radiology",
-    "Physical Therapy",
+    "Therapist",
     "Dermatology",
     "ENT",
   ];

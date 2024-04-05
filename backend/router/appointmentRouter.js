@@ -6,9 +6,9 @@ import {
   updateAppointmentStatus,
 } from "../controller/appointmentController.js";
 import {
-   isAdminAuthenticated,
+  isAdminAuthenticated,
   isPatientAuthenticated,
-} from "../middleware/auth.js";
+} from "../middlewares/auth.js";
 
 const router = express.Router();
 

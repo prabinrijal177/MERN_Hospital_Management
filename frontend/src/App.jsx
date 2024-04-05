@@ -1,19 +1,17 @@
-import  { useContext, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Appointment from "./pages/Appointment";
-import AboutUs from "./pages/AboutUs";
-import Register from "./pages/Register";
+import Home from "./Pages/Home";
+import Appointment from "./Pages/Appointment";
+import AboutUs from "./Pages/AboutUs";
+import Register from "./Pages/Register";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { Context } from "./main";
-import Login from "./pages/Login";
-
-
+import Login from "./Pages/Login";
 const App = () => {
   const { isAuthenticated, setIsAuthenticated, setUser } =
     useContext(Context);
@@ -34,8 +32,7 @@ const App = () => {
         setUser({});
       }
     };
-     fetchUser();
-
+    fetchUser();
   }, [isAuthenticated]);
 
   return (
@@ -53,7 +50,7 @@ const App = () => {
         <ToastContainer position="top-center" />
       </Router>
     </>
-  )
+  );
 };
 
 export default App;
