@@ -22,7 +22,7 @@ const Messages = () => {
     fetchMessages();
   }, []);
 
-  if (!isAuthenticated) {
+  if (isAuthenticated) {
     return <Navigate to={"/login"} />;
   }
 
